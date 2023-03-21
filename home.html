@@ -5,11 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Netflix UI Clone</title>
+    <title>Netflix</title>
 
-    <link rel="icon" type="image/x-icon" href="src/images/favicon.ico">
-    <link rel="stylesheet" href="src/css/home.css"/>
-    <script src="src/js/app.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="css/home.css"/>
 
   </head>
   <body>
@@ -17,46 +16,50 @@
     <!-- navbar section -->
     <div class="nav">
       <div class="nav__left">
-        <img class="nav_logo" src="src/images/netflix title logo.png" alt="">
+        <img class="nav_logo" src="assets/images/netflix title logo.png" alt="">
       </div>
 
       <div class="nav__right">
-        <img src="src/images/Account_logo.png" class="nav_avatar" alt="">
+        <img src="assets/images/user-32.png" class="nav__profile_image" alt="">
       </div>
-
     </div>
 
 
     <!-- banner section -->
-    <header id="banner">
-      <div id="banner_contents">
-        <h1 id="banner_title"></h1>
-        <div id="banner_buttons">
-        <button id="banner_button">Play</button>
-        <button id="banner_button">My List</button>
+    <div class="banner"
+      style="background-image: url('assets/images/movies/1.jpg')"
+    >
+      <div class="banner_contents">
+        <h1 class="banner_title">
+          The Glory
+        </h1>
+        <div class="banner_buttons">
+        <button class="banner_button" style="background-color: red;">Play</button>
+        <button class="banner_button">My List</button>
       </div>
 
-      <p id="banner_desc"></p>
+      <p class="banner_desc">
+        After a childhood marked by pain and violence, a woman puts a carefully planned revenge scheme in motion.
+      </p>
       </div>
 
-      <div id="banner_fadeBottom"></div>
-    </header>
-
-    <!-- rows -->
-    <div id="headrow">
-      <div class="row">
-        <h2 class="row_title"></h2>
-        <div class="row_posters"></div>
-      </div>
+      <div class="banner_fadeBottom"></div>
     </div>
 
-    <script>
-      window.addEventListener("scroll",function(){
 
-        var nav = document.querySelector(".nav");
-        nav.classList.toggle("active", window.scrollY > 0);
-      })
-      
-    </script>
+    <div class="top_picks_for_you">
+      <h2>Top picks for you</h2>
+
+      <div class="mini_movie_cards_wrapper">
+        <div class="mini_movie_card" 
+          style="background-image: url('assets/images/movies/movie_mini_1.png');">
+          
+          <button type="button">Play</button>
+          <button type="button"></button>
+        </div>
+      </div>
+
+    </div>
+
   </body>
 </html>
